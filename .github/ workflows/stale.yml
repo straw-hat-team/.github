@@ -1,0 +1,34 @@
+name: Mark stale issues and pull requests
+
+on:
+  schedule:
+  - cron: '27 1 * * *'
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+    - uses: actions/stale@v3
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        exempt-draft-pr: true
+
+        stale-issue-message: >
+          This issue has been automatically marked as stale because it has not had
+          recent activity. It will be closed if no further activity occurs. Thank you
+          for your contributions.
+        stale-issue-label: 'Stale: Discard'
+        exempt-issue-labels: 'Stale: Keep'
+
+
+        stale-pr-label: 'Stale: Discard'
+        exempt-pr-labels: 'Stale: Keep'
+        stale-pr-message: >
+          This pull request has been automatically marked as stale because it
+          has not had recent activity. It will be closed if no further activity
+          occurs. Thank you for your contributions.
