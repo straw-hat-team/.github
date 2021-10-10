@@ -16,7 +16,6 @@ jobs:
     - uses: actions/stale@v3
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        exempt-draft-pr: true
 
         stale-issue-message: >
           This issue has been automatically marked as stale because it has not had
@@ -24,6 +23,8 @@ jobs:
           for your contributions.
         stale-issue-label: 'Stale: Discard'
         exempt-issue-labels: 'Stale: Keep'
+        days-before-issue-stale: 30
+        days-before-issue-close: 5
 
 
         stale-pr-label: 'Stale: Discard'
@@ -32,3 +33,6 @@ jobs:
           This pull request has been automatically marked as stale because it
           has not had recent activity. It will be closed if no further activity
           occurs. Thank you for your contributions.
+        days-before-pr-stale: 45
+        days-before-pr-close: 10
+        exempt-draft-pr: true
