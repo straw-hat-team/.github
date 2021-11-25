@@ -1,0 +1,7 @@
+{
+  "name": "Elixir Hex Publish Workflow",
+  "description": "Publish the package to Hex",
+  "iconName": "example-icon",
+  "categories": ["Elixir"],
+  "filePatterns": ["mix.exs"]
+}
