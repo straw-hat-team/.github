@@ -58,3 +58,39 @@ jobs:
         otp-version: '22.3'
     - name: Run Linter
       run: mix credo
+
+  dialyzer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set Cache Key
+        id: cache_key
+        run: |
+          mix_hash="${{ hashFiles(format('{0}{1}', github.workspace, '/mix.lock')) }}"
+          echo "::set-output name=mix_hash::$mix_hash"
+      - name: Restore PLT
+        uses: actions/cache@v2
+        with:
+          path: |
+            _build/dev/*.plt
+            _build/dev/*.plt.hash
+          key: plt-cache-${{ steps.cache_key.outputs.mix_hash }}
+          restore-keys: |
+            plt-cache-
+      - name: Set up Elixir
+        uses: erlef/setup-elixir@v1
+        with:
+          elixir-version: '1.11'
+          otp-version: '22.3'
+      - name: Restore dependencies cache
+        uses: actions/cache@v2
+        with:
+          path: deps
+          key: ${{ runner.os }}-mix-${{ hashFiles('**/mix.lock') }}
+          restore-keys: ${{ runner.os }}-mix-
+      - name: Install dependencies
+        run: |
+          mix local.rebar --force
+          mix local.hex --force
+          mix deps.get
+      - run: mix dialyzer
