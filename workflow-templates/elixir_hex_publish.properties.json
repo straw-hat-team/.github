@@ -1,6 +1,6 @@
 {
-  "name": "Elixir Quality Assurance",
-  "description": "Run Quality Assurance tools",
+  "name": "Elixir Hex Publish",
+  "description": "Publish the package to Hex",
   "iconName": "elixir-lang",
   "categories": ["Elixir"],
   "filePatterns": ["mix.exs"]
