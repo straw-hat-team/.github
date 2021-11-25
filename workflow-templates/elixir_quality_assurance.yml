@@ -68,7 +68,7 @@ jobs:
         run: |
           mix_hash="${{ hashFiles(format('{0}{1}', github.workspace, '/mix.lock')) }}"
           echo "::set-output name=mix_hash::$mix_hash"
-      - name: Restore PLT
+      - name: Restore PLT cache
         uses: actions/cache@v2
         with:
           path: |
