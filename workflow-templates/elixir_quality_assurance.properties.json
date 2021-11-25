@@ -1,7 +1,7 @@
 {
   "name": "Elixir Hex Publish",
   "description": "Publish the package to Hex",
-  "iconName": "elixir-logo",
+  "iconName": "icons/elixir-lang",
   "categories": ["Elixir"],
   "filePatterns": ["mix.exs"]
 }
