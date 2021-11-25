@@ -93,4 +93,4 @@ jobs:
           mix local.rebar --force
           mix local.hex --force
           mix deps.get
-      - run: mix dialyzer
+      - run: mix dialyzer --no-check --halt-exit-status
