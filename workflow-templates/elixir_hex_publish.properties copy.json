@@ -1,0 +1,7 @@
+{
+  "name": "Elixir Quality Assurance",
+  "description": "Run Quality Assurance tools",
+  "iconName": "elixir-logo",
+  "categories": ["Elixir"],
+  "filePatterns": ["mix.exs"]
+}

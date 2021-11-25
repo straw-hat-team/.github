@@ -1,5 +1,5 @@
 {
-  "name": "Elixir Hex Publish Workflow",
+  "name": "Elixir Hex Publish",
   "description": "Publish the package to Hex",
   "iconName": "elixir-logo",
   "categories": ["Elixir"],
