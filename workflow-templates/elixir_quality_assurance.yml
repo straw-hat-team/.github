@@ -45,3 +45,16 @@ jobs:
         otp-version: '22.3'
     - name: Run Formatter
       run: mix format --check-formatted
+
+  linter:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Elixir
+      uses: erlef/setup-elixir@v1
+      with:
+        elixir-version: '1.11'
+        otp-version: '22.3'
+    - name: Run Linter
+      run: mix credo
