@@ -2,6 +2,10 @@
 
 🎶 Oh yeah, look at it go!, roll out the barrel, feel it in your bones 🎶
 
+### Community
+
+- [Discussions](https://github.com/orgs/straw-hat-team/discussions)
+
 <!--
 
 **Here are some ideas to get you started:**
