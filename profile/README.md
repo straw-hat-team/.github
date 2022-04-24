@@ -5,6 +5,7 @@
 ### Community
 
 - [Discussions](https://github.com/orgs/straw-hat-team/discussions)
+- [Discord](https://discord.gg/5WURzBb)
 
 <!--
 
