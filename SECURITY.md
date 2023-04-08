@@ -2,6 +2,17 @@
 
 ## Supported Versions
 
+## Browsers
+
+We support the following browsers:
+
+- **Chrome:** >= 109
+- **Chrome for Android:** >= 111
+- **Firefox:** >= 110
+- **Edge:** >= 110
+- **Safari:** >= 16.3
+- **Safari on iOS:** >= 16.1
+
 ### Elixir and Erlang/OTP
 
 We do our best to follow [Elixir Compatibility and Deprecations][1], we are committed to only support the latest version
