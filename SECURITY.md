@@ -2,6 +2,12 @@
 
 ## Supported Versions
 
+## NodeJS
+
+We support the following NodeJS versions:
+
+- **NodeJS:** >= 18.15.0
+
 ## Browsers
 
 We support the following browsers:
