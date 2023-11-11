@@ -6,7 +6,7 @@
 
 We support the following NodeJS versions:
 
-- **NodeJS:** >= 18.15.0
+- **NodeJS:** >= 29.9.0
 
 ## Browsers
 
