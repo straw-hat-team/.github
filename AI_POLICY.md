@@ -4,7 +4,8 @@ This policy defines how the Straw Hat team expects contributors to engage with t
 using AI tools like agents and LLMs.
 
 This policy applies to all repositories in the [`straw-hat-team`](https://github.com/straw-hat-team)
-GitHub organization, just like the [Code of Conduct](./CODE_OF_CONDUCT.md).
+and [`TrogonStack`](https://github.com/TrogonStack) GitHub organizations, just like the
+[Code of Conduct](./CODE_OF_CONDUCT.md).
 
 ## AI usage is assumed
 
