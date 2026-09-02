@@ -5,6 +5,9 @@ Thank you for investing your time in contributing to our project!
 Read our [Code of Conduct](./CODE_OF_CONDUCT.md) to keep our community
 approachable and respectable.
 
+Read our [AI Contribution Policy](./AI_POLICY.md) before contributing with the
+help of AI tools like agents and LLMs.
+
 ## Pull Request
 
 When you're finished with the changes, create a pull request, also known as a PR.
