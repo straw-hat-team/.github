@@ -1,0 +1,16 @@
+name: Mark stale issues and pull requests
+
+on:
+  schedule:
+  - cron: '27 1 * * *'
+
+jobs:
+  stale:
+
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+    - uses: straw-hat-team/github-actions-workflows/stale@5ab906d801d41b723636b498e57509e18db1856a # v1.9.1
