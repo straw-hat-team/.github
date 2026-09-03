@@ -1,0 +1,5 @@
+{
+  "name": "Mark stale issues and pull requests",
+  "description": "Label and close issues and pull requests that have gone quiet",
+  "categories": ["Automation"]
+}
