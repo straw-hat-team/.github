@@ -16,11 +16,17 @@ We follow [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 <type>(<optional scope>): <subject>
 ```
 
-Common types are `feat`, `fix`, `docs`, `refactor`, `test`, `build`, `ci`, and `chore`. Some
-repositories check this in continuous integration.
+We use three types:
 
-Mark a breaking change with a `!` after the type, as in `feat!:`, or with a `BREAKING CHANGE:` footer.
-Read our [Versioning Policy](./VERSIONING.md) to know what counts as breaking.
+- `feat` for a backwards compatible addition, which bumps the `MINOR` version.
+- `fix` for a backwards compatible fix, which bumps the `PATCH` version.
+- `chore` for everything else, including documentation, tests, refactors, and continuous
+  integration. It releases nothing.
+
+Mark a breaking change with a `!` after the type, as in `feat!:` or `fix!:`, which bumps the `MAJOR`
+version. Read our [Versioning Policy](./VERSIONING.md) to know what counts as breaking.
+
+The subject line drives the release, so keep the type accurate.
 
 ## Sign your work
 
