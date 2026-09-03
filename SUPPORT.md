@@ -7,7 +7,7 @@ repositories and organizations, you agree to abide by its terms.
 
 ## Where to ask
 
-- Questions, ideas, and open ended conversations belong in
+- Questions, ideas, and open-ended conversations belong in
   [Discussions](https://github.com/orgs/straw-hat-team/discussions).
 - Bugs and feature requests belong in the issue tracker of the repository in question.
 - Security vulnerabilities follow our [Security Policy](./SECURITY.md). Never report them publicly.
