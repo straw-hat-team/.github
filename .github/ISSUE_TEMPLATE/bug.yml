@@ -3,11 +3,15 @@ description: Tell us about something that's not working the way we (probably) in
 labels: ["kind:bug", "state:triage"]
 body:
   - type: checkboxes
+    id: initial-checklist
     attributes:
-      label: Existing Issue or Pull Request Verification
-      description: Confirm that there are no duplicate Issues or Pull Requests currently open related to your submission.
+      label: Initial Checklist
       options:
-        - label: "Confirmed, no existing Issues or Pull Requests found related to my submission."
+        - label: I read the [Contributing guide](https://github.com/straw-hat-team/.github/blob/main/CONTRIBUTING.md) and the [Support guide](https://github.com/straw-hat-team/.github/blob/main/SUPPORT.md)
+          required: true
+        - label: I agree to follow the [Code of Conduct](https://github.com/straw-hat-team/.github/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+        - label: I searched existing Issues, Pull Requests, and Discussions, and could not find anything related
           required: true
   - type: input
     id: package-version
@@ -28,7 +32,11 @@ body:
     id: repro
     attributes:
       label: Steps to Reproduce
-      description: How can we see what you're seeing? Specific is terrific.
+      description: |-
+        How can we see what you're seeing? Specific is terrific.
+
+        A link to a repository or a runnable snippet beats a description. Strip out everything that
+        is not needed to trigger the problem.
       placeholder: |-
         1. foo
         2. bar
@@ -45,6 +53,14 @@ body:
     id: actual
     attributes:
       label: Actual Result
-      description: Logs? Screenshots? Yes, please.
+      description: Logs? Screenshots? Yes, please. Paste logs and errors as text, not only as images.
     validations:
       required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Language runtime and operating system.
+      placeholder: "Elixir 1.18.1 / OTP 27, macOS 15.1"
+    validations:
+      required: false
