@@ -2,6 +2,11 @@
 
 🎶 Oh yeah, look at it go!, roll out the barrel, feel it in your bones 🎶
 
+### Open source
+
+Our open source work lives in [Trogon Stack](https://github.com/TrogonStack). Projects still hosted
+here are moving over, so start there if you are looking for something to use or contribute to.
+
 ### Community
 
 - [Discussions](https://github.com/orgs/straw-hat-team/discussions)
