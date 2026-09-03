@@ -2,6 +2,17 @@ name: 💡 Feature Request
 description: Tell us about a problem our software could solve but doesn't.
 labels: ["kind:feature", "state:triage"]
 body:
+  - type: checkboxes
+    id: initial-checklist
+    attributes:
+      label: Initial Checklist
+      options:
+        - label: I read the [Contributing guide](https://github.com/straw-hat-team/.github/blob/main/CONTRIBUTING.md) and the [Support guide](https://github.com/straw-hat-team/.github/blob/main/SUPPORT.md)
+          required: true
+        - label: I agree to follow the [Code of Conduct](https://github.com/straw-hat-team/.github/blob/main/CODE_OF_CONDUCT.md)
+          required: true
+        - label: I searched existing Issues, Pull Requests, and Discussions, and could not find anything related
+          required: true
   - type: textarea
     id: problem
     attributes:

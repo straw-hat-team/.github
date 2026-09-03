@@ -1,1 +1,8 @@
 blank_issues_enabled: false
+contact_links:
+  - name: 💬 Discussions
+    url: https://github.com/orgs/straw-hat-team/discussions
+    about: Ask questions and share ideas with the community.
+  - name: 🔒 Security Vulnerability
+    url: https://github.com/straw-hat-team/.github/blob/main/SECURITY.md
+    about: Report vulnerabilities privately. Never open a public issue for them.
