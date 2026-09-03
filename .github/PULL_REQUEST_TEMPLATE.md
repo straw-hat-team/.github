@@ -10,6 +10,7 @@
 - [ ] I agree to follow the [Code of Conduct](https://github.com/straw-hat-team/.github/blob/main/CODE_OF_CONDUCT.md)
 - [ ] I searched existing issues and pull requests, and linked anything relevant below
 - [ ] I enabled [allow maintainer edits](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/allowing-changes-to-a-pull-request-branch-created-from-a-fork), if this pull request comes from a fork
+- [ ] My commits follow the [commit conventions](https://github.com/straw-hat-team/.github/blob/main/CONTRIBUTING.md#commits) and are signed off with `git commit -s`
 - [ ] I updated the documentation, or this change does not need it
 - [ ] I added tests, or this change does not need them
 
