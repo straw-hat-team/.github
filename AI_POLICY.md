@@ -117,11 +117,15 @@ humans.
 ## Legal
 
 You are responsible for ensuring you have the right to submit every contribution under the license
-of the repository you are contributing to, including any code, documentation, or other content
-produced with the help of AI tools.
+that applies to what you are changing, including any code, documentation, or other content produced
+with the help of AI tools. The [Developer Certificate of Origin](https://developercertificate.org)
+sign-off required on every commit is your certification that this is true, and AI assistance does
+not change what you are certifying.
 
 ## Attribution
 
-This policy is adapted from the [Crossplane AI Contribution
-Policy](https://github.com/crossplane/crossplane/blob/main/AI_POLICY.md), licensed under the Apache
-License 2.0.
+This policy is adapted, with modifications, from the [Crossplane AI Contribution
+Policy](https://github.com/crossplane/crossplane/blob/main/AI_POLICY.md), Copyright 2016 The
+Crossplane Authors, licensed under the Apache License 2.0. That license is included in this
+repository as [LICENSES/Apache-2.0.txt](./LICENSES/Apache-2.0.txt) and governs this file, in place
+of the MIT license that covers the rest of the repository.
