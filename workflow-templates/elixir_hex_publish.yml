@@ -1,5 +1,9 @@
 name: Hex Publish
 
+# Publishes with a Hex Workload Identity, which needs a `hexpm` environment in this repository and an
+# identity on the package's hex.pm page naming this workflow file and that environment. Hex cannot
+# create a package that way, so publish its first release once with an API key.
+
 on:
   release:
     types: [published]
